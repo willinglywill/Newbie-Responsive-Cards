@@ -1,0 +1,206 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+/* font-family: 'Lexend Deca', sans-serif; */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+/* font-family: 'Big Shoulders Display', cursive; */
+
+
+/* End Of Fonts */
+:root{
+
+    /* Colors */
+    --card1-bg-col:hsl(31, 77%, 52%);
+    --card2-bg-col:hsl(184, 100%, 22%);
+    --card3-bg-col:hsl(179, 100%, 13%);
+    --paragraph-col:hsla(0, 0%, 100%, 0.75);
+    --bg-heading-button-col:hsl(0, 0%, 95%);
+    /* End Of Colors */
+
+    /* Font */
+    --font-size:15px;
+    --header-font: 'Big Shoulders Display', cursive;
+    --paragrph-font:'Lexend Deca', sans-serif;
+
+    /* End Of Font */
+}
+/* Colors */
+
+
+
+/* End Of Colors */
+
+
+
+
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--bg-heading-button-col);
+}
+
+
+.container{
+    max-width: 60vw;
+    display: flex;
+    margin-top: 5%;
+    height: 60%;
+    min-height: 400px;
+}
+.card {
+    
+    height: 100%;
+    position: relative;
+    padding: 50px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title{
+    margin-top: 2rem;
+    text-transform: uppercase;
+    color: var(--bg-heading-button-col);
+    font-family: var(--header-font);
+}
+
+.title-desc{
+    margin-top: 2rem;
+    line-height: 1.7rem;
+    color: var(--paragraph-col);
+    font-family: var(--paragrph-font);
+}
+.card-1{
+    background-color: var(--card1-bg-col);
+    border-radius: 10px 0 0 10px;
+}
+.card-2{
+    background-color: var(--card2-bg-col);
+}
+
+.card-3{
+    background-color: var(--card3-bg-col);
+    border-radius: 0 10px 10px 0;
+}
+
+.logo{
+    display: block;
+    
+}
+
+.btn{
+    display: inline-block;
+    width: 150px;
+    padding:15px 25px;
+    border-radius: 20px;
+    background-color: var(--bg-heading-button-col);
+    color: transparent;
+    text-decoration: none;
+    font-family: var(--paragrph-font);
+    flex-grow: 0;
+
+}
+
+.card-1 .btn{
+    color: var(--card1-bg-col);
+}
+
+.card-2 .btn{
+    color: var(--card2-bg-col);
+}
+
+.card-3 .btn{
+    color: var(--card3-bg-col);
+}
+
+.attribution{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* MediaQueries */
+
+@media screen and (max-width:1300px){
+    
+.container{
+    max-width: 80vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    height: 100%;
+    min-height: 400px;
+    margin-top: 100px;
+}
+.card {
+    
+    height: 100%;
+    position: relative;
+    padding: 50px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.card-title{
+    margin-top: 2rem;
+    text-transform: uppercase;
+    color: var(--bg-heading-button-col);
+    font-family: var(--header-font);
+}
+
+.title-desc{
+    margin-top: 2rem;
+    line-height: 1.7rem;
+    color: var(--paragraph-col);
+    font-family: var(--paragrph-font);
+    margin-bottom: 30px;
+}
+.card-1{
+    background-color: var(--card1-bg-col);
+    border-radius: 10px 10px 0 0;
+}
+.card-2{
+    background-color: var(--card2-bg-col);
+}
+
+.card-3{
+    background-color: var(--card3-bg-col);
+    border-radius: 0 0 10px 10px;
+}
+
+.logo{
+    display: block;
+    
+}
+
+.btn{
+    display: inline-block;
+    width: 150px;
+    padding:15px 25px;
+    border-radius: 20px;
+    background-color: var(--bg-heading-button-col);
+    color: transparent;
+    text-decoration: none;
+    font-family: var(--paragrph-font);
+    flex-grow: 0;
+
+
+}
+.attribution{
+    display: none;
+}
+}
